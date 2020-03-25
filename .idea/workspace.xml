@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Generator/migrations/0005_skilljson.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Generator/migrations/0006_auto_20200325_1607.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/sfia_reference.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,7 @@
       <updated>1585030973167</updated>
       <workItem from="1585030975645" duration="15035000" />
       <workItem from="1585086538827" duration="12343000" />
-      <workItem from="1585103148835" duration="14077000" />
+      <workItem from="1585103148835" duration="15363000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -107,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585134198630</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Migrations">
+      <created>1585138632996</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585138632996</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +121,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed ajax issue" />
     <MESSAGE value="Finished basic front end" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished basic front end" />
+    <MESSAGE value="Migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585031294638">
@@ -127,10 +133,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1585134197751">
+    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1585138632467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585134197751" />
+    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585138632467" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -155,10 +161,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585031277614" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585134207834">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585139098388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585134207834" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585139098388" />
     <state x="1147" y="154" width="585" height="732" key="find.popup" timestamp="1585055408717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
