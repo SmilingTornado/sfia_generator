@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Generator/templates/invalid.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/Generator/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SFIA Generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SFIA Generator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generator/migrations/0005_skilljson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generator/migrations/0006_auto_20200325_1607.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/sfia_reference.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFIAGenerator/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SFIAGenerator/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +91,7 @@
       <updated>1585030973167</updated>
       <workItem from="1585030975645" duration="15035000" />
       <workItem from="1585086538827" duration="12343000" />
-      <workItem from="1585103148835" duration="12252000" />
+      <workItem from="1585103148835" duration="14077000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -109,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585104440107</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished basic front end">
+      <created>1585134198630</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585134198630</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +115,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed ajax issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed ajax issue" />
+    <MESSAGE value="Finished basic front end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished basic front end" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585031294638">
@@ -128,38 +127,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1585104439572">
+    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1585134197751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585104439572" />
+    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585134197751" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1154" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585031276827" />
-    <state width="1876" height="138" key="GridCell.Tab.0.bottom" timestamp="1585127741430">
+    <state width="1876" height="138" key="GridCell.Tab.0.bottom" timestamp="1585137343035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585127741430" />
-    <state width="1876" height="138" key="GridCell.Tab.0.center" timestamp="1585127741429">
+    <state width="1876" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585137343035" />
+    <state width="1876" height="138" key="GridCell.Tab.0.center" timestamp="1585137343034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="138" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585127741429" />
-    <state width="1876" height="138" key="GridCell.Tab.0.left" timestamp="1585127741429">
+    <state width="1876" height="138" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585137343034" />
+    <state width="1876" height="138" key="GridCell.Tab.0.left" timestamp="1585137343034">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="138" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585127741429" />
-    <state width="1876" height="138" key="GridCell.Tab.0.right" timestamp="1585127741430">
+    <state width="1876" height="138" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585137343034" />
+    <state width="1876" height="138" key="GridCell.Tab.0.right" timestamp="1585137343035">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="138" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585127741430" />
+    <state width="1876" height="138" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585137343035" />
     <state x="877" y="151" key="SettingsEditor" timestamp="1585031277614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585031277614" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585104452444">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585134207834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585104452444" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585134207834" />
     <state x="1147" y="154" width="585" height="732" key="find.popup" timestamp="1585055408717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
