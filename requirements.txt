@@ -1,0 +1,9 @@
+asgiref==3.2.6
+Django==3.0.4
+django-ckeditor==5.9.0
+django-crispy-forms==1.9.0
+django-js-asset==1.2.2
+lxml==4.5.0
+python-docx==0.8.10
+pytz==2019.3
+sqlparse==0.3.1
