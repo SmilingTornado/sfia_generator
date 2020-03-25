@@ -11,6 +11,8 @@ from django.http import HttpResponse
 from django.conf import settings
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
+from django.core.exceptions import ObjectDoesNotExist
+from .models import Skill, Level
 
 @csrf_exempt
 def index(request):
@@ -22,21 +24,47 @@ def index(request):
         sk2_start = int(request.POST['sk2_min'])
         sk2_stop = int(request.POST['sk2_max'])
         type = request.POST['type']
-        return generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop)
-
+        if is_valid(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
+            return generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop)
+        else:
+            template = loader.get_template('invalid.html')
+            context = {}
+            return HttpResponse(template.render(context, request))
     else:
         template = loader.get_template('form.html')
         context = {}
         return HttpResponse(template.render(context, request))
 
+def is_valid(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
+    if sk1_start>=1 and sk2_start>=1 and sk1_stop<=7 and sk2_stop<=7 and (type=='student' or type=='employer'):
+        try:
+            skill_object = Skill.objects.get(code=sk1.lower())
+        except: return False
+        try:
+            skill_object = Skill.objects.get(code=sk2.lower())
+        except:
+            return False
+        return True
+    else: return False
+
 def generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
 
-    # Loading SFIA skills from JSON
-    with codecs.open(settings.BASE_DIR + '/Generator/sfia_reference.json', 'r', encoding="utf8") as f:
-        sfia = json.load(f)['skills']
-
     def get_skill(sk_code):
-        return next(skill for skill in sfia if skill['code'] == sk_code)
+
+        skill_object = Skill.objects.get(code=sk_code.lower())
+
+        skill = {
+            'name':skill_object.name,
+            'code':skill_object.code,
+            'description':skill_object.description,
+            'levels':[]
+        }
+        for level in Level.objects.filter(skill = skill_object):
+            skill['levels'].append({
+                'level':level.level,
+                'description':level.description,
+            })
+        return skill
 
     def get_levels(sk_code, sk_range):
 
@@ -44,8 +72,11 @@ def generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
         levels = []
 
         for i in range(sk_range[0], sk_range[1] + 1):
-            description = next(levels for levels in sk['levels'] if levels['level'] == i)['description']
-            levels.append({'level': i, 'description': description})
+            for level in sk['levels']:
+                if level['level'] == i:
+                    description = level['description']
+                    levels.append({'level': i, 'description': description})
+                    break
         return levels
 
     def add_skill_table(sk_code, sk_range):
@@ -116,8 +147,9 @@ def generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
     add_skill_table(sk2, [sk2_start, sk2_stop])
 
     # Saving to output
+    filename = '%s-%s.docx' % (sk1,sk2)
     response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
-    response['Content-Disposition'] = 'attachment; filename=download.docx'
+    response['Content-Disposition'] = 'attachment; filename=' + filename
     doc.save(response)
 
     return response

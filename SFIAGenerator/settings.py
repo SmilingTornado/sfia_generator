@@ -35,7 +35,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'ckeditor',
-    'crispy_forms',
     'Generator.apps.GeneratorConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -74,8 +73,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'SFIAGenerator.wsgi.application'
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases

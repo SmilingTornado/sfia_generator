@@ -1,38 +1,35 @@
 {% extends 'base.html' %}
-
-{% load crispy_forms_tags %}
-
-**people/person_form.html**
-
+{% load static %}
 {% csrf_token %}
 {% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'Generator/style.css' %}">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen">
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <form action="" method="post" data-ajax="false">
+    <form action="" method="post" data-ajax="false" target="_blank">
         <h2 style="font-weight: bold;">Skill 1:</h2>
-        <label for="sk1">Skill 1 Code: </label>
+        <label for="sk1">Skill 1 Code (ex: PROD): </label>
         <input id="sk1" type="text" name="sk1" value="{{ sk1_code }}">
         <label for="sk1_range">Skill 1 Range: </label>
         <div data-role="rangeslider" name="sk1_range">
-            <input type="range" name="sk1_min" id="sk1_min" value={{ sk1_min|default:"3" }} min="1" max="7">
+            <input type="range" name="sk1_min" id="sk1_min" value={{ sk1_min|default:"2" }} min="1" max="7">
             <input type="range" name="sk1_max" id="sk1_max" value={{ sk1_max|default:"6" }} min="1" max="7">
         </div>
         <br>
         <h2 style="font-weight: bold;">Skill 1:</h2>
-        <label for="sk2">Skill 2 Code: </label>
+        <label for="sk2">Skill 2 Code (ex: TEST): </label>
         <input id="sk2" type="text" name="sk2" value="{{ sk2_code }}">
         <label for="sk2_range">Skill 2 Range: </label>
         <div data-role="rangeslider" name="sk2_range">
-            <input type="range" name="sk2_min" id="sk2_min" value={{ sk2_min|default:"3" }} min="1" max="7">
+            <input type="range" name="sk2_min" id="sk2_min" value={{ sk2_min|default:"2" }} min="1" max="7">
             <input type="range" name="sk2_max" id="sk2_max" value={{ sk2_max|default:"6" }} min="1" max="7">
         </div>
         <br>
         <h2 style="font-weight: bold;">Form Type:</h2>
         <select name="type" id="type" value={{ type|default:"employee" }}>
-              <option value="student">Student</option>
-              <option value="employee">Employee</option>
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
         </select>
         <br>
-        <input type="submit" value="OK">
+        <input type="submit" value="Click Here to Download Document">
     </form>
 {% endblock %}
