@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/Generator/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generator/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generator/templates/invalid.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/invalid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SFIAGenerator/settings.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,7 @@
       <workItem from="1585086538827" duration="12343000" />
       <workItem from="1585103148835" duration="17032000" />
       <workItem from="1585204406629" duration="626000" />
-      <workItem from="1585231800762" duration="1004000" />
+      <workItem from="1585231800762" duration="2000000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -132,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585141239591</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="suggested fixes">
+      <created>1585232860627</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585232860627</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +150,8 @@
     <MESSAGE value="Migrations" />
     <MESSAGE value="fixed typo" />
     <MESSAGE value="deleted old json" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted old json" />
+    <MESSAGE value="suggested fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="suggested fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585031294638">
@@ -155,10 +162,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1585204719738">
+    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1585232858656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585204719738" />
+    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585232858656" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -183,10 +190,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585031277614" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585141253484">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585232908642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585141253484" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585232908642" />
     <state x="1147" y="154" width="585" height="732" key="find.popup" timestamp="1585055408717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

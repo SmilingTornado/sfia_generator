@@ -7,31 +7,41 @@
         <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen">
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     </head>
-    <form method="post" data-ajax="false" target="_blank">
-        <h2 style="font-weight: bold;">Skill 1:</h2>
-        <label for="sk1">Skill 1 Code (ex: PROD): </label>
-        <input id="sk1" type="text" name="sk1" value="{{ sk1_code }}">
-        <label>Skill 1 Range: </label>
-        <div data-role="rangeslider">
-            <input type="range" name="sk1_min" id="sk1_min" value={{ sk1_min|default:"2" }} min="1" max="7">
-            <input type="range" name="sk1_max" id="sk1_max" value={{ sk1_max|default:"6" }} min="1" max="7">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h1 class="mt-2">SFIA Generator</h1>
+                <hr class="mt-0 mb-4">
+                <form method="post" data-ajax="false" target="_blank">
+                    <h2 style="font-weight: bold;">Skill 1:</h2>
+                    <label for="sk1">Skill 1 Code (ex: PROD): </label>
+                    <input id="sk1" type="text" name="sk1" value="{{ sk1_code }}">
+                    <label>Skill 1 Range: </label>
+                    <div data-role="rangeslider">
+                        <input type="range" name="sk1_min" id="sk1_min" value={{ sk1_min|default:"2" }} min="1" max="7">
+                        <input type="range" name="sk1_max" id="sk1_max" value={{ sk1_max|default:"6" }} min="1" max="7">
+                    </div>
+                    <br>
+                    <h2 style="font-weight: bold;">Skill 2:</h2>
+                    <label for="sk2">Skill 2 Code (ex: TEST): </label>
+                    <input id="sk2" type="text" name="sk2" value="{{ sk2_code }}">
+                    <label>Skill 2 Range: </label>
+                    <div data-role="rangeslider">
+                        <input type="range" name="sk2_min" id="sk2_min" value={{ sk2_min|default:"2" }} min="1" max="7">
+                        <input type="range" name="sk2_max" id="sk2_max" value={{ sk2_max|default:"6" }} min="1" max="7">
+                    </div>
+                    <br>
+                    <h2 style="font-weight: bold;">Form Type:</h2>
+                    <select name="type" id="type">
+                        <option value="student">Student</option>
+                        <option value="employer">Employer</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Click Here to Download Document">
+                </form>
+            </div>
         </div>
-        <br>
-        <h2 style="font-weight: bold;">Skill 2:</h2>
-        <label for="sk2">Skill 2 Code (ex: TEST): </label>
-        <input id="sk2" type="text" name="sk2" value="{{ sk2_code }}">
-        <label>Skill 2 Range: </label>
-        <div data-role="rangeslider">
-            <input type="range" name="sk2_min" id="sk2_min" value={{ sk2_min|default:"2" }} min="1" max="7">
-            <input type="range" name="sk2_max" id="sk2_max" value={{ sk2_max|default:"6" }} min="1" max="7">
-        </div>
-        <br>
-        <h2 style="font-weight: bold;">Form Type:</h2>
-        <select name="type" id="type">
-            <option value="student">Student</option>
-            <option value="employer">Employer</option>
-        </select>
-        <br>
-        <input type="submit" value="Click Here to Download Document">
-    </form>
+    </div>
+    </body>
 {% endblock %}
