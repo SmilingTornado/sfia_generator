@@ -40,10 +40,11 @@ def is_valid(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
         try:
             skill_object = Skill.objects.get(code=sk1.lower())
         except: return False
-        try:
-            skill_object = Skill.objects.get(code=sk2.lower())
-        except:
-            return False
+        if sk2 != '':
+            try:
+                skill_object = Skill.objects.get(code=sk2.lower())
+            except:
+                return False
         return True
     else: return False
 
@@ -139,12 +140,13 @@ def generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
     add_skill_info(sk1)
     # Adding the first table
     add_skill_table(sk1, [sk1_start, sk1_stop])
-    # Addidng a page break
-    add_page_break()
-    # Adding skill information
-    add_skill_info(sk2)
-    # Adding the second table
-    add_skill_table(sk2, [sk2_start, sk2_stop])
+    if sk2 != '':
+        # Addidng a page break
+        add_page_break()
+        # Adding skill information
+        add_skill_info(sk2)
+        # Adding the second table
+        add_skill_table(sk2, [sk2_start, sk2_stop])
 
     # Saving to output
     filename = '%s-%s.docx' % (sk1,sk2)

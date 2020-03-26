@@ -2,10 +2,9 @@
 
 {% csrf_token %}
 {% block content %}
+    <head>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen">
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <h1>Request invalid, this window will close soon</h1>
-    <progress value="0" max="5" id="progressBar"></progress>
     <script>
         var timeleft = 5;
         var downloadTimer = setInterval(function () {
@@ -16,4 +15,7 @@
             timeleft -= 1;
         }, 1000);
     </script>
+    </head>
+    <h1>Request invalid, this window will close soon</h1>
+    <progress value="0" max="5" id="progressBar"></progress>
 {% endblock %}
