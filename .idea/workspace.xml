@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="deleted old json">
+    <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generator/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFIAGenerator/settings.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
       <workItem from="1585086538827" duration="12343000" />
       <workItem from="1585103148835" duration="17032000" />
       <workItem from="1585204406629" duration="626000" />
-      <workItem from="1585231800762" duration="2107000" />
+      <workItem from="1585231800762" duration="2188000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -143,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585233852423</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="removed css link">
+      <created>1585233930857</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585233930857</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +163,8 @@
     <MESSAGE value="deleted old json" />
     <MESSAGE value="suggested fixes" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="removed css link" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed css link" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585031294638">
@@ -168,10 +175,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1585233851371">
+    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1585233929617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585233851371" />
+    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585233929617" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -196,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585031277614" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585233858896">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1585233938220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585233858896" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585233938220" />
     <state x="1147" y="154" width="585" height="732" key="find.popup" timestamp="1585055408717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
