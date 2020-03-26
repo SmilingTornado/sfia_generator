@@ -22,8 +22,8 @@
                     </div>
                     <br>
                     <h2 style="font-weight: bold;">Skill 2:</h2>
-                    <label for="sk2">Skill 2 Code (ex: TEST): </label>
-                    <input id="sk2" type="text" name="sk2" value="{{ sk2_code }}">
+                    <label for="sk2">Skill 2 Code (ex: TEST) (Optional): </label>
+                    <input id="sk2" type="text" name="sk2" value="{{ sk2_code }}" placeholder="(Optional)">
                     <label>Skill 2 Range: </label>
                     <div data-role="rangeslider">
                         <input type="range" name="sk2_min" id="sk2_min" value={{ sk2_min|default:"2" }} min="1" max="7">
