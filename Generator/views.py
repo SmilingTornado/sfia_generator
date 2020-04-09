@@ -1,17 +1,10 @@
-from django.shortcuts import render
-
 # Create your views here.
-from django.http import HttpResponse
-import os
 import docx
-import json
-import codecs
 from docx.shared import RGBColor, Inches, Pt
 from django.http import HttpResponse
 from django.conf import settings
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
-from django.core.exceptions import ObjectDoesNotExist
 from .models import Skill, Level
 
 @csrf_exempt
@@ -131,25 +124,60 @@ def generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
         run = paragraph.add_run('')
         run.add_break(docx.enum.text.WD_BREAK.PAGE)
 
+    def get_levels_list(sk_code, sk_range):
+
+        sk = get_skill(sk_code)
+        levels = []
+
+        for i in range(sk_range[0], sk_range[1] + 1):
+            for level in sk['levels']:
+                if level['level'] == i:
+                    levels.append(level['description'])
+                    break
+        return levels
+
     # Generating the document
     if type=='employer':
         doc = docx.Document(settings.BASE_DIR + '/Generator/employer_template.docx')
     else:
         doc = docx.Document(settings.BASE_DIR + '/Generator/student_template.docx')
-    # Adding skill information
-    add_skill_info(sk1)
-    # Adding the first table
-    add_skill_table(sk1, [sk1_start, sk1_stop])
+    filename = ''
     if sk2 != '':
-        # Addidng a page break
-        add_page_break()
+        sk1_concat = ''.join(get_levels_list(sk1, [sk1_start, sk1_stop]))
+        sk2_concat = ''.join(get_levels_list(sk2, [sk2_start, sk2_stop]))
+        #Check if skill 1 is longer than skill 2
+        if len(sk1_concat) <= len(sk2_concat):
+            # Adding skill information
+            add_skill_info(sk1)
+            # Adding the first table
+            add_skill_table(sk1, [sk1_start, sk1_stop])
+            # Addidng a page break
+            add_page_break()
+            # Adding skill information
+            add_skill_info(sk2)
+            # Adding the second table
+            add_skill_table(sk2, [sk2_start, sk2_stop])
+            filename = '%s-%s.docx' % (sk1.upper(), sk2.upper())
+        else:
+            # Adding skill information
+            add_skill_info(sk2)
+            # Adding the first table
+            add_skill_table(sk2, [sk2_start, sk2_stop])
+            # Addidng a page break
+            add_page_break()
+            # Adding skill information
+            add_skill_info(sk1)
+            # Adding the second table
+            add_skill_table(sk1, [sk1_start, sk1_stop])
+            filename = '%s-%s.docx' % (sk2.upper(), sk1.upper())
+    else:
         # Adding skill information
-        add_skill_info(sk2)
-        # Adding the second table
-        add_skill_table(sk2, [sk2_start, sk2_stop])
+        add_skill_info(sk1)
+        # Adding the first table
+        add_skill_table(sk1, [sk1_start, sk1_stop])
+        filename = '%s.docx' % (sk1.upper())
 
     # Saving to output
-    filename = '%s-%s.docx' % (sk1,sk2)
     response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
     response['Content-Disposition'] = 'attachment; filename=' + filename
     doc.save(response)
