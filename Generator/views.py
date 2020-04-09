@@ -18,7 +18,10 @@ def index(request):
         sk2_stop = int(request.POST['sk2_max'])
         type = request.POST['type']
         if is_valid(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
-            return generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop)
+            dedicate = False
+            if 'dedicate' in request.POST.keys():
+                dedicate = True
+            return generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop, dedicate)
         else:
             template = loader.get_template('invalid.html')
             context = {}
@@ -41,7 +44,7 @@ def is_valid(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
         return True
     else: return False
 
-def generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
+def generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop, dedicate):
 
     def get_skill(sk_code):
 
@@ -141,7 +144,9 @@ def generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop):
         doc = docx.Document(settings.BASE_DIR + '/Generator/employer_template.docx')
     else:
         doc = docx.Document(settings.BASE_DIR + '/Generator/student_template.docx')
-    filename = ''
+    if dedicate:
+        # Addidng a page break
+        add_page_break()
     if sk2 != '':
         sk1_concat = ''.join(get_levels_list(sk1, [sk1_start, sk1_stop]))
         sk2_concat = ''.join(get_levels_list(sk2, [sk2_start, sk2_stop]))
