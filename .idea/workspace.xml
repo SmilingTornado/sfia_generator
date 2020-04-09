@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/templates/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Generator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +93,8 @@
       <workItem from="1585204406629" duration="626000" />
       <workItem from="1585231800762" duration="3079000" />
       <workItem from="1585304726754" duration="268000" />
-      <workItem from="1586426034915" duration="3226000" />
+      <workItem from="1586426034915" duration="3443000" />
+      <workItem from="1586429633804" duration="1818000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586427359733</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added checkbox to create skills on dedicated pages">
+      <created>1586429356233</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1586429356233</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,49 +222,54 @@
     <MESSAGE value="added (optional) labels" />
     <MESSAGE value="settings file" />
     <MESSAGE value="Added skill ordering based on length of descriptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added skill ordering based on length of descriptions" />
+    <MESSAGE value="Added checkbox to create skills on dedicated pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added checkbox to create skills on dedicated pages" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585031294638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585031294638" />
+    <state x="640" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586429466114">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586429466114" />
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585033267120">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1586427358715">
+    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1586429355694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586427358715" />
+    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586429355694" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1154" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585031276827" />
-    <state width="1876" height="217" key="GridCell.Tab.0.bottom" timestamp="1586428173621">
+    <state width="1876" height="217" key="GridCell.Tab.0.bottom" timestamp="1586429491535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586428173621" />
-    <state width="1876" height="217" key="GridCell.Tab.0.center" timestamp="1586428173621">
+    <state width="1876" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586429491535" />
+    <state width="1876" height="217" key="GridCell.Tab.0.center" timestamp="1586429491535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="217" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586428173621" />
-    <state width="1876" height="217" key="GridCell.Tab.0.left" timestamp="1586428173621">
+    <state width="1876" height="217" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586429491535" />
+    <state width="1876" height="217" key="GridCell.Tab.0.left" timestamp="1586429491535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="217" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586428173621" />
-    <state width="1876" height="217" key="GridCell.Tab.0.right" timestamp="1586428173621">
+    <state width="1876" height="217" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586429491535" />
+    <state width="1876" height="217" key="GridCell.Tab.0.right" timestamp="1586429491535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="217" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586428173621" />
+    <state width="1876" height="217" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586429491535" />
     <state x="877" y="151" key="SettingsEditor" timestamp="1586426214067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586426214067" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1586427369747">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1586429376016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586427369747" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586429376016" />
     <state x="1147" y="154" width="585" height="732" key="find.popup" timestamp="1585055408717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

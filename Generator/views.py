@@ -113,7 +113,7 @@ def generate(request,type,sk1,sk2,sk1_start,sk2_start,sk1_stop,sk2_stop, dedicat
         name.bold = True
         name.font.size = Pt(14)
         name.font.name = 'Calibri'
-        code = p.add_run(sk['code'])
+        code = p.add_run(sk['code'].upper())
         code.bold = True
         code.font.size = Pt(11)
         code.font.color.rgb = RGBColor(0x89, 0x89, 0x89)
