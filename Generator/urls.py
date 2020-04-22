@@ -17,6 +17,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='form'),
-    path('generate/<slug:type>/<slug:sk1>/<int:sk1_start>/<int:sk1_stop>/<slug:sk2>/<int:sk2_start>/<int:sk2_stop>/', views.generate, name='generate'),
+    path('', views.index, name='form_page'),
+    path('search/', views.search_page, name='search_page'),
 ]

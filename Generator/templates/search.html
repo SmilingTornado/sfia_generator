@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% csrf_token %}
+{% block content %}
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen">
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+    <body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h1 class="mt-2">SFIA Generator</h1>
+                <hr class="mt-0 mb-4">
+                <form method="post" data-ajax="false" action="/">
+                    <h2 style="font-weight: bold;">Skill Search:</h2>
+                    <label for="search_text">Please write a short paragraph about the type of skill you're seeking: </label>
+                    <textarea class="input" name="input" id="input"></textarea>
+                    <input type="submit" value="Click here to search for suitable skill">
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+{% endblock %}
