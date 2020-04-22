@@ -14,7 +14,10 @@ from .models import Skill, Level
 
 @csrf_exempt
 def index(request):
-    if request.method == "POST":
+    if request.method == "GET":
+        context = {'searched': False}
+        return render(request, 'form.html', context)
+    elif request.method == "POST":
         if 'type' in request.POST and 'sk1' in request.POST and 'sk2' in request.POST \
                 and 'sk1_min' in request.POST and 'sk2_min' in request.POST \
                 and 'sk1_max' in request.POST and 'sk2_max' in request.POST:
@@ -81,9 +84,7 @@ def index(request):
 
 
 def search_page(request):
-    template = loader.get_template('search.html')
-    context = {}
-    return HttpResponse(template.render(context, request))
+    return render(request, 'search.html', {})
 
 
 def is_valid(type, sk1, sk2, sk1_start, sk2_start, sk1_stop, sk2_stop):
