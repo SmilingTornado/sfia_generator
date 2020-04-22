@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SFIA Generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SFIA Generator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -25,6 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZYzmGNXvBtub1bNHQlydlQSwUS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,7 +40,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Generator/templates" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -60,9 +63,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="SFIAGenerator.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Tower\.virtualenvs\SFIA_Generator-haeQi2T0\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -94,7 +97,12 @@
       <workItem from="1585231800762" duration="3079000" />
       <workItem from="1585304726754" duration="268000" />
       <workItem from="1586426034915" duration="3443000" />
-      <workItem from="1586429633804" duration="1818000" />
+      <workItem from="1586429633804" duration="2442000" />
+      <workItem from="1587479672914" duration="2171000" />
+      <workItem from="1587481909526" duration="1365000" />
+      <workItem from="1587526028815" duration="10723000" />
+      <workItem from="1587554827455" duration="157000" />
+      <workItem from="1587558402553" duration="8883000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -201,13 +209,37 @@
       <option name="project" value="LOCAL" />
       <updated>1586429356233</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Uppercase the skill code">
+      <created>1586431777426</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1586431777426</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added search functionality">
+      <created>1587564292342</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1587564292342</updated>
+    </task>
+    <task id="LOCAL-00018" summary="updated requirements">
+      <created>1587565752379</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1587565752379</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="Fixed ajax issue" />
     <MESSAGE value="Finished basic front end" />
     <MESSAGE value="Migrations" />
@@ -223,13 +255,16 @@
     <MESSAGE value="settings file" />
     <MESSAGE value="Added skill ordering based on length of descriptions" />
     <MESSAGE value="Added checkbox to create skills on dedicated pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added checkbox to create skills on dedicated pages" />
+    <MESSAGE value="Uppercase the skill code" />
+    <MESSAGE value="added search functionality" />
+    <MESSAGE value="updated requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated requirements" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585031294638">
+    <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587482303711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585031294638" />
+    <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587482303711" />
     <state x="640" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586429466114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -238,41 +273,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1586429355694">
+    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1587565751957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1586429355694" />
+    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587565751957" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1154" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585031276827" />
-    <state width="1876" height="217" key="GridCell.Tab.0.bottom" timestamp="1586429491535">
+    <state width="1079" height="219" key="GridCell.Tab.0.bottom" timestamp="1587567389042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="217" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586429491535" />
-    <state width="1876" height="217" key="GridCell.Tab.0.center" timestamp="1586429491535">
+    <state width="1079" height="219" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587567389042" />
+    <state width="1079" height="219" key="GridCell.Tab.0.center" timestamp="1587567389042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="217" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586429491535" />
-    <state width="1876" height="217" key="GridCell.Tab.0.left" timestamp="1586429491535">
+    <state width="1079" height="219" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587567389042" />
+    <state width="1079" height="219" key="GridCell.Tab.0.left" timestamp="1587567389042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="217" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586429491535" />
-    <state width="1876" height="217" key="GridCell.Tab.0.right" timestamp="1586429491535">
+    <state width="1079" height="219" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587567389042" />
+    <state width="1079" height="219" key="GridCell.Tab.0.right" timestamp="1587567389042">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="217" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586429491535" />
-    <state x="877" y="151" key="SettingsEditor" timestamp="1586426214067">
+    <state width="1079" height="219" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587567389042" />
+    <state x="877" y="151" key="SettingsEditor" timestamp="1587558446576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586426214067" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1586429376016">
+    <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587558446576" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1587565767406">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586429376016" />
-    <state x="1147" y="154" width="585" height="732" key="find.popup" timestamp="1585055408717">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587565767406" />
+    <state x="1147" y="154" width="710" height="732" key="find.popup" timestamp="1587563927646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1147" y="154" width="585" height="732" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585055408717" />
+    <state x="1147" y="154" width="710" height="732" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587563927646" />
   </component>
 </project>
