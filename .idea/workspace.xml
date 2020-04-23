@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SFIA Generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SFIA Generator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="updated requirements for psycopg2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generator/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -38,20 +36,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Generator/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/Generator" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Tower\Desktop\sfia_generator\Generator\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tower\Desktop\SFIA Generator\static\Generator" />
       <recent name="C:\Users\Tower\Desktop\SFIA Generator" />
       <recent name="C:\Users\Tower\Desktop\SFIA Generator\Generator" />
       <recent name="C:\Users\Tower\Desktop\SFIA Generator\SFIAGenerator" />
       <recent name="C:\Users\Tower\Desktop\SFIA Generator\Generator\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Stuff\Projects\Dissertation\sfia_generator\static\Generator" />
+      <recent name="C:\Users\Tower\Desktop\sfia_generator\Generator\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -103,6 +102,8 @@
       <workItem from="1587526028815" duration="10723000" />
       <workItem from="1587554827455" duration="157000" />
       <workItem from="1587558402553" duration="8883000" />
+      <workItem from="1587567439932" duration="3220000" />
+      <workItem from="1587626362835" duration="6981000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -230,7 +231,42 @@
       <option name="project" value="LOCAL" />
       <updated>1587565752379</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updated requirements for psycopg2">
+      <created>1587567597820</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1587567597820</updated>
+    </task>
+    <task id="LOCAL-00020" summary="changed package versions">
+      <created>1587571763354</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1587571763354</updated>
+    </task>
+    <task id="LOCAL-00021" summary="streamlined some stuff">
+      <created>1587573409199</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1587573409199</updated>
+    </task>
+    <task id="LOCAL-00022" summary="refactored code with new methods and removed unused imports">
+      <created>1587627671632</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1587627671632</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added list of skills and skill descriptions">
+      <created>1587633292127</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1587633292127</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +294,12 @@
     <MESSAGE value="Uppercase the skill code" />
     <MESSAGE value="added search functionality" />
     <MESSAGE value="updated requirements" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated requirements" />
+    <MESSAGE value="updated requirements for psycopg2" />
+    <MESSAGE value="changed package versions" />
+    <MESSAGE value="streamlined some stuff" />
+    <MESSAGE value="refactored code with new methods and removed unused imports" />
+    <MESSAGE value="added list of skills and skill descriptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="added list of skills and skill descriptions" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587482303711">
@@ -273,10 +314,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="598" y="117" key="CommitChangelistDialog2" timestamp="1587565751957">
+    <state x="288" y="68" key="CommitChangelistDialog2" timestamp="1587633291371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="117" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587565751957" />
+    <state x="288" y="68" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587633291371" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -301,13 +342,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587558446576" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1587565767406">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1587633300949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587565767406" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587633300949" />
     <state x="1147" y="154" width="710" height="732" key="find.popup" timestamp="1587563927646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1147" y="154" width="710" height="732" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587563927646" />
+    <state x="1055" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1587630849852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1055" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587630849852" />
   </component>
 </project>
