@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% csrf_token %}
+{% block content %}
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen">
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <h1 class="mt-2">SFIA Generator</h1>
+                <hr class="mt-0 mb-4">
+                <a href="{% url 'search_page' %}">Click here to try the skill searcher</a>
+                <br>
+                <a href="{% url 'list_skills_page' %}">Click here to show the list of skills</a>
+                <br>
+                <a href="{% url 'form_page' %}">Click here to go to document generator</a>
+                <br>
+                <br>
+                <h2 style="font-weight: bold;">Skills Information:</h2>
+                <h4>{{ skill.name }}</h4>
+                <h5>{{ skill.code.upper|upper }}</h5>
+                <p>{{ skill.description }}</p>
+                <h4>Levels</h4>
+                {% for level in levels %}
+                    <h6>Level {{ level.level }}</h6>
+                    <p>{{ level.description }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    </body>
+{% endblock %}

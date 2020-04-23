@@ -19,4 +19,6 @@ from . import views
 urlpatterns = [
     path('', views.index, name='form_page'),
     path('search/', views.search_page, name='search_page'),
+    path('list_skills/', views.list_skills, name='list_skills_page'),
+    path('skill/<slug:code>/', views.show_skill, name='show_skill_page'),
 ]

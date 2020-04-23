@@ -35,6 +35,39 @@ def index(request):
         return render(request, 'form.html', context)
 
 
+def search_page(request):
+    return render(request, 'search.html', {})
+
+
+def list_skills(request):
+    set_1 = []
+    set_2 = []
+    set_3 = []
+    skill_objects = Skill.objects.all().order_by('code')
+    length = len(skill_objects)
+    for num,skill in enumerate(skill_objects,start=0):
+        if num < length/3:
+            set_1.append(skill)
+        elif num < length*(2/3):
+            set_2.append(skill)
+        else:
+            set_3.append(skill)
+    return render(request, 'list_skills.html', {"set_1": set_1,"set_2": set_2,"set_3": set_3})
+
+
+def show_skill(request, code):
+    try:
+        skill_object = Skill.objects.get(code=code.lower())
+        levels = Level.objects.filter(skill=skill_object)
+        skill = {
+            'skill': skill_object,
+            'levels': levels
+        }
+        return render(request, 'show_skill.html', skill)
+    except:
+        return render(request, 'invalid.html', {})
+
+
 def search_similarities(request):
     similarities = {}
     input = request.POST['input']
@@ -71,10 +104,6 @@ def search_similarities(request):
         return render(request, 'form.html', {'sk1_code': first_match.upper, 'searched': True})
     context = {'sk1_code': first_match.upper, 'sk2_code': second_match.upper, 'searched': True}
     return render(request, 'form.html', context)
-
-
-def search_page(request):
-    return render(request, 'search.html', {})
 
 
 def is_valid(request):
