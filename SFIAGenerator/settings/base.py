@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_URL = '/static/'
 STATIC_ROOT = "/var/www/example.com/static/"
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, '../../static'),
     )
 
 # Quick-start development settings - unsuitable for production
@@ -26,11 +26,6 @@ STATICFILES_DIRS = (
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '!ea9jb%#2c#*+gg0rsok+*llvyv)lwqx1q=ebc-j)ki4rw*)ey'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['18.130.244.39', '127.0.0.1']
 
 
 # Application definition
@@ -75,16 +70,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'SFIAGenerator.wsgi.application'
-
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
 
 
 # Password validation
