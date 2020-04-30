@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="updated requirements for psycopg2">
+    <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/templates/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFIAGenerator/settings/prod.py" beforeDir="false" afterPath="$PROJECT_DIR$/SFIAGenerator/settings/prod.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +18,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -41,16 +42,16 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Stuff\Projects\Dissertation\sfia_generator\static\Generator" />
+      <recent name="C:\Users\Tower\Desktop\sfia_generator\Generator\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Stuff\Projects\Dissertation\sfia_generator\SFIAGenerator\settings" />
       <recent name="C:\Users\Tower\Desktop\SFIA Generator\static\Generator" />
       <recent name="C:\Users\Tower\Desktop\SFIA Generator" />
       <recent name="C:\Users\Tower\Desktop\SFIA Generator\Generator" />
       <recent name="C:\Users\Tower\Desktop\SFIA Generator\SFIAGenerator" />
-      <recent name="C:\Users\Tower\Desktop\SFIA Generator\Generator\templates" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Stuff\Projects\Dissertation\sfia_generator\static\Generator" />
-      <recent name="C:\Users\Tower\Desktop\sfia_generator\Generator\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -60,7 +61,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="SFIAGenerator.settings" />
+        <env name="DJANGO_SETTINGS_MODULE" value="SFIAGenerator.settings.dev" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -103,7 +104,10 @@
       <workItem from="1587554827455" duration="157000" />
       <workItem from="1587558402553" duration="8883000" />
       <workItem from="1587567439932" duration="3220000" />
-      <workItem from="1587626362835" duration="6981000" />
+      <workItem from="1587626362835" duration="7653000" />
+      <workItem from="1587635115130" duration="50000" />
+      <workItem from="1587637018047" duration="61000" />
+      <workItem from="1588239264371" duration="1443000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -266,7 +270,35 @@
       <option name="project" value="LOCAL" />
       <updated>1587633292127</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="removed a link">
+      <created>1587633396293</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1587633396293</updated>
+    </task>
+    <task id="LOCAL-00025" summary="changed a label">
+      <created>1587635148971</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1587635148971</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Adjusted settings files">
+      <created>1588240022805</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588240022805</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Adjusted settings files">
+      <created>1588240634085</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1588240634085</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +308,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Fixed ajax issue" />
     <MESSAGE value="Finished basic front end" />
     <MESSAGE value="Migrations" />
     <MESSAGE value="fixed typo" />
@@ -299,13 +330,18 @@
     <MESSAGE value="streamlined some stuff" />
     <MESSAGE value="refactored code with new methods and removed unused imports" />
     <MESSAGE value="added list of skills and skill descriptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="added list of skills and skill descriptions" />
+    <MESSAGE value="removed a link" />
+    <MESSAGE value="changed a label" />
+    <MESSAGE value="Adjusted settings files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted settings files" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587482303711">
+    <state x="577" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588240529769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="828" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587482303711" />
+    <state x="577" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588240529769" />
     <state x="640" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586429466114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -314,42 +350,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="288" y="68" key="CommitChangelistDialog2" timestamp="1587633291371">
+    <state x="288" y="68" key="CommitChangelistDialog2" timestamp="1588240633513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="288" y="68" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1587633291371" />
+    <state x="288" y="68" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588240633513" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1154" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585031276827" />
-    <state width="1079" height="219" key="GridCell.Tab.0.bottom" timestamp="1587567389042">
+    <state width="1877" height="216" key="GridCell.Tab.0.bottom" timestamp="1588240531989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1079" height="219" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587567389042" />
-    <state width="1079" height="219" key="GridCell.Tab.0.center" timestamp="1587567389042">
+    <state width="1877" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588240531989" />
+    <state width="1877" height="216" key="GridCell.Tab.0.center" timestamp="1588240531989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1079" height="219" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587567389042" />
-    <state width="1079" height="219" key="GridCell.Tab.0.left" timestamp="1587567389042">
+    <state width="1877" height="216" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588240531989" />
+    <state width="1877" height="216" key="GridCell.Tab.0.left" timestamp="1588240531989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1079" height="219" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587567389042" />
-    <state width="1079" height="219" key="GridCell.Tab.0.right" timestamp="1587567389042">
+    <state width="1877" height="216" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588240531989" />
+    <state width="1877" height="216" key="GridCell.Tab.0.right" timestamp="1588240531989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1079" height="219" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587567389042" />
+    <state width="1877" height="216" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588240531989" />
     <state x="877" y="151" key="SettingsEditor" timestamp="1587558446576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587558446576" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1587633300949">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1588240638552">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587633300949" />
-    <state x="1147" y="154" width="710" height="732" key="find.popup" timestamp="1587563927646">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588240638552" />
+    <state x="1147" y="154" width="710" height="732" key="find.popup" timestamp="1588239344687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1147" y="154" width="710" height="732" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587563927646" />
+    <state x="1147" y="154" width="710" height="732" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588239344687" />
     <state x="1055" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1587630849852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

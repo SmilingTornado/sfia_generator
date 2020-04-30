@@ -1,3 +1,4 @@
+from SFIAGenerator.settings.base import *
 ALLOWED_HOSTS = ['18.130.244.39', 'sfia.worawat.com']
 
 # SECURITY WARNING: don't run with debug turned on in production!
