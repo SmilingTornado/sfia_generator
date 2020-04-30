@@ -27,7 +27,6 @@ STATICFILES_DIRS = (
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '!ea9jb%#2c#*+gg0rsok+*llvyv)lwqx1q=ebc-j)ki4rw*)ey'
 
-
 # Application definition
 
 INSTALLED_APPS = [

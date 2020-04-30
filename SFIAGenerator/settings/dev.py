@@ -1,4 +1,4 @@
-from .base import *
+from SFIAGenerator.settings.base import *
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
