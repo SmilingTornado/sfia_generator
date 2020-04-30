@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="Adjusted settings files">
+    <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFIAGenerator/settings/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SFIAGenerator/settings/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFIAGenerator/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/SFIAGenerator/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,7 @@
       <workItem from="1587626362835" duration="7653000" />
       <workItem from="1587635115130" duration="50000" />
       <workItem from="1587637018047" duration="61000" />
-      <workItem from="1588239264371" duration="2532000" />
+      <workItem from="1588239264371" duration="2810000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -306,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588240715689</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="adjusted base dir">
+      <created>1588241951047</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1588241951047</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +322,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Finished basic front end" />
     <MESSAGE value="Migrations" />
     <MESSAGE value="fixed typo" />
     <MESSAGE value="deleted old json" />
@@ -341,7 +346,8 @@
     <MESSAGE value="removed a link" />
     <MESSAGE value="changed a label" />
     <MESSAGE value="Adjusted settings files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted settings files" />
+    <MESSAGE value="adjusted base dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted base dir" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -357,10 +363,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="288" y="68" key="CommitChangelistDialog2" timestamp="1588240743426">
+    <state x="288" y="68" key="CommitChangelistDialog2" timestamp="1588241950342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="288" y="68" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588240743426" />
+    <state x="288" y="68" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588241950342" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -385,14 +391,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587558446576" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1588240747830">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1588241960315">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588240747830" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588241960315" />
     <state x="1147" y="154" width="710" height="732" key="find.popup" timestamp="1588239344687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1147" y="154" width="710" height="732" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588239344687" />
+    <state x="642" y="323" key="git4idea.merge.GitPullDialog" timestamp="1588242066052">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="642" y="323" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588242066052" />
     <state x="1055" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1587630849852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
