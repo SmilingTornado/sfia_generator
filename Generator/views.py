@@ -28,6 +28,10 @@ def index(request):
         elif 'input' in request.POST:
             return search_similarities(request)
 
+        elif 'code_1' and 'code_2' in request.POST:
+            context = {'searched': False, 'sk1_code': request.POST['code_1'], 'sk2_code': request.POST['code_2']}
+            return render(request, 'form.html', context)
+
         else:
             return render(request, 'invalid.html', {})
     else:
@@ -45,14 +49,30 @@ def list_skills(request):
     set_3 = []
     skill_objects = Skill.objects.all().order_by('code')
     length = len(skill_objects)
-    for num,skill in enumerate(skill_objects,start=0):
-        if num < length/3:
+    for num, skill in enumerate(skill_objects, start=0):
+        if num < length / 3:
             set_1.append(skill)
-        elif num < length*(2/3):
+        elif num < length * (2 / 3):
             set_2.append(skill)
         else:
             set_3.append(skill)
-    return render(request, 'list_skills.html', {"set_1": set_1,"set_2": set_2,"set_3": set_3})
+    return render(request, 'list_skills.html', {"set_1": set_1, "set_2": set_2, "set_3": set_3})
+
+
+def select_second(request, code_1):
+    set_1 = []
+    set_2 = []
+    set_3 = []
+    skill_objects = Skill.objects.all().order_by('code')
+    length = len(skill_objects)
+    for num, skill in enumerate(skill_objects, start=0):
+        if num < length / 3:
+            set_1.append(skill)
+        elif num < length * (2 / 3):
+            set_2.append(skill)
+        else:
+            set_3.append(skill)
+    return render(request, 'list_skills.html', {"code_1": code_1, "set_1": set_1, "set_2": set_2, "set_3": set_3})
 
 
 def show_skill(request, code):
@@ -62,6 +82,21 @@ def show_skill(request, code):
         skill = {
             'skill': skill_object,
             'levels': levels
+        }
+        return render(request, 'show_skill.html', skill)
+    except:
+        return render(request, 'invalid.html', {})
+
+
+def view_second(request, code_1, code_2):
+    try:
+        skill_object = Skill.objects.get(code=code_2.lower())
+        levels = Level.objects.filter(skill=skill_object)
+        skill = {
+            'skill': skill_object,
+            'levels': levels,
+            'code_1': code_1,
+            'code_2': code_2
         }
         return render(request, 'show_skill.html', skill)
     except:
