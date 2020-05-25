@@ -127,7 +127,7 @@ def search_similarities(request):
         skill_sim = skill_sim_total / len(sent_tokenize(level.description))
         if level.skill.code not in similarities:
             similarities[level.skill.code] = skill_sim
-        elif similarities[level.skill.code] > skill_sim:
+        elif similarities[level.skill.code] < skill_sim:
             similarities[level.skill.code] = skill_sim
     print(similarities)
     first_match = max(similarities, key=similarities.get)
