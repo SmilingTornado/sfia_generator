@@ -129,7 +129,6 @@ def search_similarities(request):
             similarities[level.skill.code] = skill_sim
         elif similarities[level.skill.code] < skill_sim:
             similarities[level.skill.code] = skill_sim
-    print(similarities)
     first_match = max(similarities, key=similarities.get)
     if (similarities[first_match] == 0):
         return render(request, 'form.html', {'searched': True})
