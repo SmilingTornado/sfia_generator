@@ -129,6 +129,22 @@ def search_similarities(request):
             similarities[level.skill.code] = skill_sim
         elif similarities[level.skill.code] < skill_sim:
             similarities[level.skill.code] = skill_sim
+    for skill in Skill.objects.all():
+        skill_sim_total = 0
+
+        for sentence in sent_tokenize(skill.description):
+            query_doc = [w.lower() for w in word_tokenize(sentence)]
+            query_doc_bow = dictionary.doc2bow(query_doc)
+            query_doc_tf_idf = tf_idf[query_doc_bow]
+            sum_of_sims = (np.sum(sims[query_doc_tf_idf], dtype=np.float32))
+            similarity = float(sum_of_sims / len(sent_tokenize(input)))
+            skill_sim_total += similarity
+
+        skill_sim = skill_sim_total / len(sent_tokenize(skill.description))
+        if skill.code not in similarities:
+            similarities[skill.code] = skill_sim
+        elif similarities[skill.code] < skill_sim:
+            similarities[skill.code] = skill_sim
     first_match = max(similarities, key=similarities.get)
     if (similarities[first_match] == 0):
         return render(request, 'form.html', {'searched': True})

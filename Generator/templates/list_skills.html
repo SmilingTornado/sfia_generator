@@ -20,6 +20,9 @@
                 {% if code_1 %}
                     <p style="background-color: #FFFF00">{{ code_1|upper }} has been selected as the first skill. Please
                         select the second</p>
+                    <a href="{% url 'list_skills_page' %}">Click here to select a different first skill</a>
+                    <br>
+                    <br>
                 {% endif %}
                 <div class="row">
                     <div class="column" style="float: left; width: 33.33%;padding: 10px;height: 300px;">

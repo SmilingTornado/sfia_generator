@@ -16,9 +16,9 @@
                     <p style="background-color: #FFFF00">The form has been pre-populated with the search results. If no
                         suitable skills have been found, the fields have been left blank.</p>
                 {% endif %}
-                <a href="{% url 'search_page' %}">Click here to try the skill searcher</a>
-                <br>
                 <a href="{% url 'list_skills_page' %}">Click here to show the list of skills or select skills</a>
+                <br>
+                <a href="{% url 'search_page' %}">Click here to try the skill searcher</a>
                 <br>
                 <br>
                 <form name='sfia_form' method="post" data-ajax="false" target="_blank">
