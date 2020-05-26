@@ -199,9 +199,9 @@ def generate(request):
 
     # Generating the document
     if type == 'employer':
-        doc = docx.Document(settings.BASE_DIR + '/Generator/employer_template.docx')
+        doc = docx.Document(settings.BASE_DIR + '/Generator/DocxTemplates/employer_template.docx')
     else:
-        doc = docx.Document(settings.BASE_DIR + '/Generator/student_template.docx')
+        doc = docx.Document(settings.BASE_DIR + '/Generator/DocxTemplates/student_template.docx')
     if dedicate:
         # Addidng a page break
         add_page_break(doc)
