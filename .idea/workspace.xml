@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="da8dacf7-1c04-4cf2-85cc-6a56de10220a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generator/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generator/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +41,17 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Stuff\Projects\Dissertation\sfia_generator\SFIAGenerator\settings" />
-      <recent name="C:\Users\Tower\Desktop\SFIA Generator\static\Generator" />
-      <recent name="C:\Users\Tower\Desktop\SFIA Generator" />
-      <recent name="C:\Users\Tower\Desktop\SFIA Generator\Generator" />
-      <recent name="C:\Users\Tower\Desktop\SFIA Generator\SFIAGenerator" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Stuff\Projects\Dissertation\sfia_generator\Generator" />
       <recent name="E:\Stuff\Projects\Dissertation\sfia_generator\static\Generator" />
       <recent name="C:\Users\Tower\Desktop\sfia_generator\Generator\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Stuff\Projects\Dissertation\sfia_generator" />
+      <recent name="E:\Stuff\Projects\Dissertation\sfia_generator\SFIAGenerator" />
+      <recent name="E:\Stuff\Projects\Dissertation\sfia_generator\SFIAGenerator\settings" />
+      <recent name="C:\Users\Tower\Desktop\SFIA Generator\static\Generator" />
+      <recent name="C:\Users\Tower\Desktop\SFIA Generator" />
     </key>
   </component>
   <component name="RunManager">
@@ -113,7 +112,9 @@
       <workItem from="1587637018047" duration="61000" />
       <workItem from="1588239264371" duration="4666000" />
       <workItem from="1588767629240" duration="7358000" />
-      <workItem from="1590419552054" duration="275000" />
+      <workItem from="1590419552054" duration="1049000" />
+      <workItem from="1590420789832" duration="753000" />
+      <workItem from="1590469807263" duration="5087000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed ajax issue">
       <created>1585104440107</created>
@@ -332,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590419720553</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="removed a line from debugging">
+      <created>1590419837808</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1590419837808</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +350,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="deleted old json" />
     <MESSAGE value="suggested fixes" />
     <MESSAGE value="fixes" />
     <MESSAGE value="removed css link" />
@@ -367,14 +374,15 @@
     <MESSAGE value="adjusted base dir" />
     <MESSAGE value="edited README.md" />
     <MESSAGE value="fixed a typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a typo" />
+    <MESSAGE value="removed a line from debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed a line from debugging" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="577" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588240815483">
+    <state x="577" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590419877271">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588240815483" />
+    <state x="577" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590419877271" />
     <state x="640" y="258" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586429466114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -383,38 +391,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585033267120" />
-    <state x="288" y="68" key="CommitChangelistDialog2" timestamp="1590419719895">
+    <state x="288" y="68" key="CommitChangelistDialog2" timestamp="1590419837240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="288" y="68" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590419719895" />
+    <state x="288" y="68" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590419837240" />
+    <state x="857" y="264" key="EnvironmentVariablesDialog" timestamp="1590419876717">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="857" y="264" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590419876717" />
     <state x="1154" y="263" key="FileChooserDialogImpl" timestamp="1585031276827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1154" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585031276827" />
-    <state width="1877" height="216" key="GridCell.Tab.0.bottom" timestamp="1588776046574">
+    <state width="1877" height="216" key="GridCell.Tab.0.bottom" timestamp="1590420601170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588776046574" />
-    <state width="1877" height="216" key="GridCell.Tab.0.center" timestamp="1588776046574">
+    <state width="1877" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590420601170" />
+    <state width="1877" height="216" key="GridCell.Tab.0.center" timestamp="1590420601170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="216" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588776046574" />
-    <state width="1877" height="216" key="GridCell.Tab.0.left" timestamp="1588776046573">
+    <state width="1877" height="216" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590420601170" />
+    <state width="1877" height="216" key="GridCell.Tab.0.left" timestamp="1590420601170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="216" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588776046573" />
-    <state width="1877" height="216" key="GridCell.Tab.0.right" timestamp="1588776046574">
+    <state width="1877" height="216" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590420601170" />
+    <state width="1877" height="216" key="GridCell.Tab.0.right" timestamp="1590420601170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="216" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588776046574" />
+    <state width="1877" height="216" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590420601170" />
     <state x="877" y="151" key="SettingsEditor" timestamp="1587558446576">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="877" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587558446576" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1590419736139">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1590419964171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590419736139" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590419964171" />
     <state x="771" y="439" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588776549101">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
