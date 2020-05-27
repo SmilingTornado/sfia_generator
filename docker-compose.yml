@@ -10,6 +10,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_nginx
+    volumes:
+      - /static:/static
     ports:
       - "80:80"
     depends_on:
@@ -18,9 +20,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_django
-    command: bash -c "python manage.py migrate --settings=SFIAGenerator.settings.docker && python manage.py collectstatic --settings=SFIAGenerator.settings.docker && python manage.py runserver 0.0.0.0:8000 --settings=SFIAGenerator.settings.docker"
+    command: bash -c "python manage.py migrate --settings=SFIAGenerator.settings.docker && python manage.py collectstatic --noinput --settings=SFIAGenerator.settings.docker && python manage.py runserver 0.0.0.0:8000 --settings=SFIAGenerator.settings.docker"
     volumes:
       - .:/code
+      - /static:/static
     ports:
       - "8000:8000"
     depends_on:
