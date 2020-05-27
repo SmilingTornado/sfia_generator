@@ -301,7 +301,7 @@ def add_skill_table(sk_code, sk_range, doc):
         bottom_cell = t.cell(1, cell_count).paragraphs[0].add_run(level['description'])
         bottom_cell.font.name = 'Calibri'
         bottom_cell.font.size = Pt(10)
-        cell_width = 0.5 / len(levels) + 11.5 * len(level['description']) / total_description_length
+        cell_width = 1.25 / len(levels) + 10.75 * len(level['description']) / total_description_length
         t.cell(0, cell_count).width = Inches(cell_width)
         t.cell(1, cell_count).width = Inches(cell_width)
         cell_count += 1
