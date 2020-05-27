@@ -1,5 +1,5 @@
 from SFIAGenerator.settings.base import *
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '18.132.14.148', 'sfia.worawat.com']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
