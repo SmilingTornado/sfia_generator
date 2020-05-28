@@ -1,6 +1,6 @@
 # sfia_generator
 
-**To run locally:**
+**To run locally without Docker:**
 
 First, clone the project onto your computer with:
 `git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git`
@@ -30,3 +30,44 @@ Creating superuser
 *  Create a superuser with `python manage.py createsuperuser` and enter details when prompted
 
 Your server is now set up and you can access it by going to http://localhost:8000 or http://127.0.0.1:8000
+
+**Installing Docker on Ubuntu/Debian (Easy Method):**
+
+If you haven't done it already, clone the project onto your computer with:
+`git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git`
+
+If not already in the project directory, change your directory to that of the project with:
+`cd sfia_generator`
+
+Run the docker install script with:
+`sudo bash docker-compose-install.sh`
+This will install Docker and Docker Compose
+
+**Installing Docker on MacOS or Windows:**
+Please refer ro the documentation at https://docs.docker.com/desktop/
+
+**To run with Docker:**
+
+If you haven't done it already, clone the project onto your computer with:
+`git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git`
+
+If not already in the project directory, change your directory to that of the project with:
+`cd sfia_generator`
+
+Run the project with:
+`docker-compose up -d`
+
+The project will now be running on port 80 of your computer meaning you can access it via http://<Your Server IP> or if running on docker locally, you can use http://localhost or http://127.0.0.1
+
+**Creating a superuser**
+
+On a Wnix based system, you can use:
+`sudo bash createsuperuser.sh`
+
+On a Windows based system, use:
+`docker-compose run web python manage.py createsuperuser --settings=SFIAGenerator.settings.docker`
+
+If unable to use the script on a Unix based system, use:
+`sudo docker-compose run web python manage.py createsuperuser --settings=SFIAGenerator.settings.docker`
+
+This will execute a script that will then allow you to insert the login credentials you would like to use
