@@ -20,7 +20,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_django
-    command: bash -c "python manage.py migrate --settings=SFIAGenerator.settings.docker && python manage.py collectstatic --noinput --settings=SFIAGenerator.settings.docker && python manage.py runserver 0.0.0.0:8000 --settings=SFIAGenerator.settings.docker"
+    command: >
+      bash -c "python manage.py migrate --settings=SFIAGenerator.settings.docker
+      && python manage.py collectstatic --noinput --settings=SFIAGenerator.settings.docker
+      && python manage.py runserver 0.0.0.0:8000 --settings=SFIAGenerator.settings.docker"
     volumes:
       - .:/code
       - /static:/static
