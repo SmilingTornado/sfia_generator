@@ -1,1 +1,1 @@
-﻿CKEDITOR.plugins.setLang("notification","ku",{closed:"ئاگادارکەرەوەکە داخرا."});
+﻿CKEDITOR.plugins.setLang("notification", "ku", {closed: "ئاگادارکەرەوەکە داخرا."});

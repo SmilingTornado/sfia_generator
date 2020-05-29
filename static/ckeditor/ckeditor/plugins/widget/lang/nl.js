@@ -2,4 +2,4 @@
  Copyright (c) 2003-2015, CKSource - Frederico Knabben. All rights reserved.
  For licensing, see LICENSE.md or http://ckeditor.com/license
 */
-CKEDITOR.plugins.setLang("widget","nl",{move:"Klik en sleep om te verplaatsen"});
+CKEDITOR.plugins.setLang("widget", "nl", {move: "Klik en sleep om te verplaatsen"});

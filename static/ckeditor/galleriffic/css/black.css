@@ -1,57 +1,73 @@
-body{
-	background-color: #111;
-	color: #bbb;
+body {
+    background-color: #111;
+    color: #bbb;
 }
-a{
-	color: #f70;
+
+a {
+    color: #f70;
 }
+
 h2 {
-	color: #ccc;
+    color: #ccc;
 }
+
 div#page {
-	background-color: #000;
-	border-color: #222;
+    background-color: #000;
+    border-color: #222;
 }
+
 div#footer {
-	color: #888;
+    color: #888;
 }
+
 div.caption-container {
-	color: #eee;
+    color: #eee;
 }
+
 div.image-title {
-	font-weight: bold;
-	font-size: 1.4em;
+    font-weight: bold;
+    font-size: 1.4em;
 }
+
 div.image-desc {
-	line-height: 1.3em;
-	padding-top: 12px;
+    line-height: 1.3em;
+    padding-top: 12px;
 }
+
 div.download {
-	margin-top: 8px;
+    margin-top: 8px;
 }
+
 div.photo-index {
-	color: #888;
+    color: #888;
 }
+
 div.navigation a.prev {
-	background-image: url(prevPageArrowWhite.gif);
+    background-image: url(prevPageArrowWhite.gif);
 }
+
 div.navigation a.next {
-	background-image: url(nextPageArrowWhite.gif);
+    background-image: url(nextPageArrowWhite.gif);
 }
+
 div.loader {
-	background-image: url(loaderWhite.gif);
+    background-image: url(loaderWhite.gif);
 }
+
 div.slideshow img {
-	border-color: #333;
+    border-color: #333;
 }
+
 ul.thumbs li.selected a.thumb {
-	background: #fff;
+    background: #fff;
 }
+
 div.pagination a:hover {
-	background-color: #111;
+    background-color: #111;
 }
+
 div.pagination span.current {
-	background-color: #fff;
-	border-color: #fff;
-	color: #000;
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
 }

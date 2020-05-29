@@ -13,12 +13,32 @@
                 <hr class="mt-0 mb-4">
                 <a href="{% url 'search_page' %}">Click here to try the skill searcher</a>
                 <br>
-                <a href="{% url 'list_skills_page' %}">Click here to show the list of skills</a>
+                {% if code_1 %}
+                    <a href="{% url 'list_skills_page' %}">Click here to restart selection or list skills</a>
+                {% else %}
+                    <a href="{% url 'list_skills_page' %}">Click here to show the list of skills or select skills</a>
+                {% endif %}
                 <br>
                 <a href="{% url 'form_page' %}">Click here to go to document generator</a>
                 <br>
                 <br>
                 <h2 style="font-weight: bold;">Skills Information:</h2>
+                {% if code_2 %}
+                    <a href="{% url 'select_second' code_1 %}">Click here to select a different second skill</a>
+                    <br>
+                    <form name='selection_form' method="post" data-ajax="false" action="{% url 'form_page' %}">
+                        <input type="hidden" id="code_1" name="code_1" value="{{ code_1 }}">
+                        <input type="hidden" id="code_2" name="code_2" value="{{ code_2 }}">
+                        <input type="submit" value="Click Here to Pre-Populate Form">
+                    </form>
+                {% else %}
+                    <a href="{% url 'select_second' skill.code %}">Click here to select this as your first skill</a>
+                    <form name='selection_form' method="post" data-ajax="false" action="{% url 'form_page' %}">
+                        <input type="hidden" id="code_1" name="code_1" value="{{ skill.code }}">
+                        <input type="hidden" id="code_2" name="code_2" value="">
+                        <input type="submit" value="Click Here to Pre-Populate Form with only one skill">
+                    </form>
+                {% endif %}
                 <h4>{{ skill.name }}</h4>
                 <h5>{{ skill.code.upper|upper }}</h5>
                 <p>{{ skill.description }}</p>

@@ -1,1 +1,1 @@
-﻿CKEDITOR.plugins.setLang("notification","sv",{closed:"Notifiering stängd."});
+﻿CKEDITOR.plugins.setLang("notification", "sv", {closed: "Notifiering stängd."});

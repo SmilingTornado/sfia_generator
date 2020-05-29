@@ -1,1 +1,1 @@
-﻿CKEDITOR.plugins.setLang("notification","ko",{closed:"알림이 닫힘."});
+﻿CKEDITOR.plugins.setLang("notification", "ko", {closed: "알림이 닫힘."});

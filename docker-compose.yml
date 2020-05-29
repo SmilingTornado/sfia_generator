@@ -1,0 +1,33 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres2020
+  nginxservice:
+    build:
+      context: .
+      dockerfile: Dockerfile_nginx
+    volumes:
+      - /static:/static
+    ports:
+      - "80:80"
+    depends_on:
+      - web
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile_django
+    command: >
+      bash -c "python manage.py migrate --settings=SFIAGenerator.settings.docker
+      && python manage.py collectstatic --noinput --settings=SFIAGenerator.settings.docker
+      && python manage.py runserver 0.0.0.0:8000 --settings=SFIAGenerator.settings.docker"
+    volumes:
+      - .:/code
+      - /static:/static
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db

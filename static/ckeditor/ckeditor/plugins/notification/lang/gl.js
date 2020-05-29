@@ -1,1 +1,1 @@
-﻿CKEDITOR.plugins.setLang("notification","gl",{closed:"Notificación pechada."});
+﻿CKEDITOR.plugins.setLang("notification", "gl", {closed: "Notificación pechada."});

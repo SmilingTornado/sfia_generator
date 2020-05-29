@@ -4,7 +4,6 @@
 {% block content %}
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen">
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'Generator/list_skills.css' %}">
     </head>
     <body>
     <div class="container">
@@ -18,27 +17,46 @@
                 <br>
                 <br>
                 <h2 style="font-weight: bold;">Skills Available:</h2>
+                {% if code_1 %}
+                    <p style="background-color: #FFFF00">{{ code_1|upper }} has been selected as the first skill. Please
+                        select the second</p>
+                    <a href="{% url 'list_skills_page' %}">Click here to select a different first skill</a>
+                    <br>
+                    <br>
+                {% endif %}
                 <div class="row">
-                    <div class="column">
+                    <div class="column" style="float: left; width: 33.33%;padding: 10px;height: 300px;">
                         {% for skill in set_1 %}
                             <ul style="list-style-type:none;">
-                                <li><a href="{% url 'show_skill_page' skill.code %}">{{ skill.name }}</a></li>
+                                {% if code_1 %}
+                                    <li><a href="{% url 'view_second' code_1 skill.code %}">{{ skill.name }}</a></li>
+                                {% else %}
+                                    <li><a href="{% url 'show_skill_page' skill.code %}">{{ skill.name }}</a></li>
+                                {% endif %}
                                 <li><h5>{{ skill.code.upper|upper }}</h5></li>
                             </ul>
                         {% endfor %}
                     </div>
-                    <div class="column">
+                    <div class="column" style="float: left; width: 33.33%;padding: 10px;height: 300px;">
                         {% for skill in set_2 %}
                             <ul style="list-style-type:none;">
-                                <li><a href="{% url 'show_skill_page' skill.code %}">{{ skill.name }}</a></li>
+                                {% if code_1 %}
+                                    <li><a href="{% url 'view_second' code_1 skill.code %}">{{ skill.name }}</a></li>
+                                {% else %}
+                                    <li><a href="{% url 'show_skill_page' skill.code %}">{{ skill.name }}</a></li>
+                                {% endif %}
                                 <li><h5>{{ skill.code.upper|upper }}</h5></li>
                             </ul>
                         {% endfor %}
                     </div>
-                    <div class="column">
+                    <div class="column" style="float: left; width: 33.33%;padding: 10px;height: 300px;">
                         {% for skill in set_3 %}
                             <ul style="list-style-type:none;">
-                                <li><a href="{% url 'show_skill_page' skill.code %}">{{ skill.name }}</a></li>
+                                {% if code_1 %}
+                                    <li><a href="{% url 'view_second' code_1 skill.code %}">{{ skill.name }}</a></li>
+                                {% else %}
+                                    <li><a href="{% url 'show_skill_page' skill.code %}">{{ skill.name }}</a></li>
+                                {% endif %}
                                 <li><h5>{{ skill.code.upper|upper }}</h5></li>
                             </ul>
                         {% endfor %}

@@ -1,1 +1,1 @@
-﻿CKEDITOR.plugins.setLang("notification","eo",{closed:"Sciigo fermita"});
+﻿CKEDITOR.plugins.setLang("notification", "eo", {closed: "Sciigo fermita"});

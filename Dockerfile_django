@@ -1,0 +1,8 @@
+FROM python:3.8.3-slim
+ENV PYTHONUNBUFFERED 1
+RUN set -ex && mkdir /code
+WORKDIR /code
+COPY requirements.txt /code/
+RUN pip install -r requirements.txt
+RUN python -c "import nltk; nltk.download('punkt')"
+COPY . /code/
