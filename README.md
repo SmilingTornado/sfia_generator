@@ -1,6 +1,9 @@
 # sfia_generator
+**Important**
 
-**To run locally without Docker:**
+If deploying publicly, please make sure to change the secret key found in `SFIAGenerator/settings/base.py`
+
+**To run without Docker:**
 
 First, clone the project onto your computer with:
 `git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git`
