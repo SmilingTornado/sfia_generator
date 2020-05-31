@@ -70,22 +70,6 @@ def select_second(request, code_1):  # Same as list_skills but addional context 
                                                 "set_3": set_3})  # Renders and returns the page of the list of skills
 
 
-def get_skill_sets():
-    set_1 = []  # Column 1
-    set_2 = []  # Column 2
-    set_3 = []  # Column 3
-    skill_objects = Skill.objects.all().order_by('code')  # Get all the skills and order them by the skill code
-    length = len(skill_objects)  # Find number of skills
-    for num, skill in enumerate(skill_objects, start=0):
-        if num < length / 3:  # Checks if the skill is in the first third of the list
-            set_1.append(skill)  # Appends to first column set
-        elif num < length * (2 / 3):  # Checks if the skill is in the second third of the list
-            set_2.append(skill)  # Appends to the second column set
-        else:  # All other skills
-            set_3.append(skill)  # Appended to the last column set
-    return set_1, set_2, set_3
-
-
 # View details of skill
 def show_skill(request, code):
     try:
@@ -100,7 +84,7 @@ def show_skill(request, code):
         return render(request, 'invalid.html', {})  # Return page for invalid requests
 
 
-#View details of second selected skill
+# View details of second selected skill
 def view_second(request, code_1, code_2):
     try:
         skill_object = Skill.objects.get(code=code_2.lower())  # Get the skill from the code
@@ -114,6 +98,22 @@ def view_second(request, code_1, code_2):
         return render(request, 'show_skill.html', context)  # Render and return context
     except:  # In the case where the skill code is invalid
         return render(request, 'invalid.html', {})  # Return page for invalid requests
+
+
+def get_skill_sets():
+    set_1 = []  # Column 1
+    set_2 = []  # Column 2
+    set_3 = []  # Column 3
+    skill_objects = Skill.objects.all().order_by('code')  # Get all the skills and order them by the skill code
+    length = len(skill_objects)  # Find number of skills
+    for num, skill in enumerate(skill_objects, start=0):
+        if num < length / 3:  # Checks if the skill is in the first third of the list
+            set_1.append(skill)  # Appends to first column set
+        elif num < length * (2 / 3):  # Checks if the skill is in the second third of the list
+            set_2.append(skill)  # Appends to the second column set
+        else:  # All other skills
+            set_3.append(skill)  # Appended to the last column set
+    return set_1, set_2, set_3
 
 
 def search_similarities(request):

@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-{% csrf_token %}
 {% block content %}
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" media="screen">
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -27,6 +26,7 @@
                     <a href="{% url 'select_second' code_1 %}">Click here to select a different second skill</a>
                     <br>
                     <form name='selection_form' method="post" data-ajax="false" action="{% url 'form_page' %}">
+                        {% csrf_token %}
                         <input type="hidden" id="code_1" name="code_1" value="{{ code_1 }}">
                         <input type="hidden" id="code_2" name="code_2" value="{{ code_2 }}">
                         <input type="submit" value="Click Here to Pre-Populate Form">
@@ -34,6 +34,7 @@
                 {% else %}
                     <a href="{% url 'select_second' skill.code %}">Click here to select this as your first skill</a>
                     <form name='selection_form' method="post" data-ajax="false" action="{% url 'form_page' %}">
+                        {% csrf_token %}
                         <input type="hidden" id="code_1" name="code_1" value="{{ skill.code }}">
                         <input type="hidden" id="code_2" name="code_2" value="">
                         <input type="submit" value="Click Here to Pre-Populate Form with only one skill">
