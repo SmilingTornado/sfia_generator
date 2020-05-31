@@ -11,7 +11,7 @@ services:
       context: .
       dockerfile: Dockerfile_nginx
     volumes:
-      - /static:/static
+      - .:/code
     ports:
       - "80:80"
     depends_on:
@@ -23,11 +23,12 @@ services:
     command: >
       bash -c "python manage.py migrate --settings=SFIAGenerator.settings.docker
       && python manage.py collectstatic --noinput --settings=SFIAGenerator.settings.docker
-      && python manage.py runserver 0.0.0.0:8000 --settings=SFIAGenerator.settings.docker"
+      && gunicorn SFIAGenerator.wsgi:application --bind 0.0.0.0:8000"
     volumes:
       - .:/code
-      - /static:/static
     ports:
       - "8000:8000"
     depends_on:
       - db
+volumes:
+  .:
