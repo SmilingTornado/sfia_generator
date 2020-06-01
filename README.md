@@ -7,7 +7,7 @@ or if using Docker, you should edit the debug and secret key settings in the doc
 **To run without Docker:**
 
 First, clone the project onto your computer with:
-`git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git`
+`git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git` or `git clone https://github.com/SmilingTornado/sfia_generator.git`
 
 Install pipenv:
 1. Install the pip installer
@@ -38,7 +38,7 @@ Your server is now set up and you can access it by going to http://localhost:800
 **Installing Docker on Ubuntu/Debian (Easy Method):**
 
 If you haven't done it already, clone the project onto your computer with:
-`git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git`
+`git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git` or `git clone https://github.com/SmilingTornado/sfia_generator.git`
 
 If not already in the project directory, change your directory to that of the project with:
 `cd sfia_generator`
@@ -53,7 +53,7 @@ Please refer to the documentation at https://docs.docker.com/desktop/
 **To run with Docker:**
 
 If you haven't done it already, clone the project onto your computer with:
-`git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git`
+`git clone https://gitlab.cs.cf.ac.uk/c1744034/sfia-generator.git` or `git clone https://github.com/SmilingTornado/sfia_generator.git`
 
 If not already in the project directory, change your directory to that of the project with:
 `cd sfia_generator`
@@ -75,3 +75,14 @@ If unable to use the script on a Unix based system, use:
 `sudo docker-compose run web python manage.py createsuperuser --settings=SFIAGenerator.settings.docker`
 
 This will execute a script that will then allow you to insert the login credentials you would like to use
+
+**Uploading a JSON to Skills models**
+
+Navigate to the admin panel via <url>/admin
+*  Click on 'Skills jsons'
+*  Add your JSON file
+*  Tick the box next to the JSON file
+*  Select the Action 'Upload to Models'
+*  Press Go and wait for it to parse into models
+
+
