@@ -28,7 +28,7 @@ STATICFILES_DIRS = (
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '!ea9jb%#2c#*+gg0rsok+*llvyv)lwqx1q=ebc-j)ki4rw*)ey'
+SECRET_KEY = os.getenv('SECRET_KEY','!ea9jb%#2c#*+gg0rsok+*llvyv)lwqx1q=ebc-j)ki4rw*)ey')
 
 # Application definition
 

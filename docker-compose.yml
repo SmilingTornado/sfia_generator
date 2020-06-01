@@ -2,10 +2,8 @@ version: '2'
 services:
   db:
     image: postgres
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres2020
+    env_file:
+      - docker.env
   nginxservice:
     build:
       context: .
@@ -20,6 +18,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile_django
+    env_file:
+      - docker.env
     command: >
       bash -c "python manage.py migrate --settings=SFIAGenerator.settings.docker
       && python manage.py collectstatic --noinput --settings=SFIAGenerator.settings.docker

@@ -1,7 +1,8 @@
 # sfia_generator
 **Important**
 
-If deploying publicly, please make sure to change the secret key found in `SFIAGenerator/settings/base.py`
+If deploying publicly, please make sure to set debug as false and change the secret key found in `SFIAGenerator/settings/base.py`
+or if using Docker, you should edit the debug and secret key settings in the docker.env file
 
 **To run without Docker:**
 
@@ -47,7 +48,7 @@ Run the docker install script with:
 This will install Docker and Docker Compose
 
 **Installing Docker on MacOS or Windows:**
-Please refer ro the documentation at https://docs.docker.com/desktop/
+Please refer to the documentation at https://docs.docker.com/desktop/
 
 **To run with Docker:**
 
