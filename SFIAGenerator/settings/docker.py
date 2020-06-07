@@ -2,6 +2,8 @@ from SFIAGenerator.settings.base import *
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '*', 'sfia.worawat.com'] #replace * with the IP of the server you're hosting it on and sfia.worawat.com with your own domain
 
+CSRF_TRUSTED_ORIGINS = ['*']
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = str(os.getenv('DEBUG',True)) == 'True'
 # Database
