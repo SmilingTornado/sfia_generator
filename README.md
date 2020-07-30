@@ -65,7 +65,7 @@ The project will now be running on port 80 of your computer meaning you can acce
 
 **Creating a superuser**
 
-On a Wnix based system, you can use:
+On a Unix based system, you can use:
 `sudo bash createsuperuser.sh`
 
 On a Windows based system, use:
