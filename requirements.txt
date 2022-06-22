@@ -17,7 +17,7 @@ jmespath==0.9.5
 joblib==0.14.1
 lxml==4.6.5
 nltk==3.6.6
-numpy==1.21.0
+numpy==1.22.0
 Pillow==9.0.1
 psycopg2-binary==2.8.5
 python-dateutil==2.8.1
